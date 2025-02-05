@@ -1,0 +1,137 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:system-ui;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url(cute.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    background: regba(0,0,0,0.164);
+
+}
+
+.frame{
+    height:400px;
+    width: 370px;
+    color: rgb(150, 84, 174);
+    backdrop-filter: blur(5px);
+    border:1px solid rgb(255, 255, 255);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0px 0px 5px rgb(255, 255, 255);
+}
+
+
+.login{
+    font-size:50px;
+    font-weight: bold;
+    color: rgb(175, 83, 224);
+    margin-top:0.5rem;
+    margin-bottom: 2.5rem;
+}
+.email,
+.password{
+    width: 90%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    margin:0.5rem;
+    position:relative;
+
+}
+
+.email input,
+.password input{
+    padding:8px 8px 8px 15px;
+    background:transparent;
+    border: none;
+    width:100%;
+    border: 1px solid white;
+    border-radius:50px;
+    font-size: 17px;
+    outline: none;
+    font-weight:bold;
+
+}
+
+.email input::placeholder,
+.password input::placeholder{
+    color:rgb(172, 137, 180);
+    
+}
+
+.remember_forgot{
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top:0.5rem;
+}
+.remember_forgot.{
+    height:auto;
+    width:auto;
+    display:flex;
+    align-items: center;
+    font-style: 17px;
+    color:rgb(93, 7, 96);
+    font-weight: bold;
+
+
+}
+remember_forget.remember_checkbox{
+    color: rgb(55, 151, 26);
+
+}
+.remember_forgot.remember input{
+    height:15px;
+    width:15px;
+    margin-right: 2rem;
+
+}
+.remember_forgot.remember a{
+    font-size:17px;
+    text-decoration: none;
+    color:rgb(144, 24, 219);
+    font-weight: bold;
+}
+.log{
+    width: 90px;
+    padding: 10px;
+    margin-top: 1rem;
+    font-style: 25px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius:50px;
+    cursor:pointer;
+    color: rgb(121, 78, 202);
+
+}
+
+.reg{
+    margin-top:1.5rem;
+    color:rgb(89, 12, 120);
+
+}
+
+.reg a{
+    font-weight:bold;
+    color:rgb(100, 27, 172);
+}

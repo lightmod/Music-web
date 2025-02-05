@@ -1,0 +1,46 @@
+*{
+    justify-content: center;
+    padding:0px;
+    margin:0;
+    font-family:system-ui;
+    margin:0 auto; /*helps to align in the centre properly*/
+    max-width: 900px; /* Set a max width for the paragraph */
+
+    text-align: center; /* Center-align text */
+    padding: 10px; /* Add padding inside the paragraph box */
+     /* Optional: Add rounded corners */
+
+    
+}
+body{
+
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    justify-content: center;
+    background:url(cuu1.png);
+    background-size:cover;
+    background-attachment: fixed;
+    color: rgb(178, 15, 145);
+
+}
+
+h1,h2,h3,h4,h5{
+    
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background */
+    background-size: 10vh;
+    padding: 20px; /* Add padding inside the paragraph box */
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+
+
+
+
+
+

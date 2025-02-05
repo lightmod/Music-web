@@ -1,0 +1,376 @@
+
+
+*{
+    padding:0;
+    margin:0;
+    font-family:system-ui;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background:url(cute1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    width:120px;
+    background-color:rgb(246, 234, 234) ;
+    padding:24px;
+
+
+
+}
+
+.sidebar .logo img{
+    border: 1px;
+    border-radius: 50px;
+    margin-top: -30px;
+    margin-left: -33px;
+    padding: 17px;
+    width: 500px;
+    max-width: 100%;
+      
+}
+
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar .navigation ul li {
+    padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a{
+    color:rgb(219, 166, 166);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px; 
+}
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus{
+    color:#ac5764;
+
+}
+
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa{
+    color:#ac5764;
+
+}
+.sidebar .navigation ul li .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:active .fa:active,
+.sidebar .navigation ul li a:focus .fa:focus{
+    color:#ac5764;
+
+}
+
+.sidebar .policies{
+    position: absolute;
+    bottom: 10px;
+}
+
+.sidebar .policies ul {
+    list-style: none;
+
+}
+
+.sidebar .policies ul li {
+    padding-bottom: 5px;
+
+}
+
+.sidebar .policies ul li a {
+    color:rgb(219, 166, 166);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+}
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a :active,
+.sidebar .policies ul li a :focus{
+    text-decoration: underline;
+
+}
+
+.main-container{
+    position: relative;
+    margin-left: 168px;
+    margin-bottom: 30px;
+    height:auto;
+    overflow: hidden;
+
+}
+
+.topbar{
+    background-color: rgb(246, 234, 234);
+    width: 1111px;
+    height: 80px;
+    
+}
+
+
+.topbar .prev-next-buttons button{
+    color:rgb(219, 166, 166);
+    background-color:  rgb(246, 234, 234);
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    margin-right: 10px;
+    position: relative;
+    bottom: -30px;
+
+}
+
+.topbar .navbar{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.topbar .navbar ul{
+    list-style: none;
+
+}
+.topbar .navbar ul li{
+    display: inline-block;
+    margin:0px 8px;
+    width: 70px;
+
+}
+
+.topbar .navbar ul li a{
+    color: rgb(219, 166, 166);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-right: 40p;
+
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus{
+    color: #ac5764;
+    font size: 15px;
+    
+}
+
+.topbar .navbar ul li.divider{
+    color:#ac5764;
+    font-size: 26px;
+    margin:0px 20px;
+    width:auto;
+    
+
+}
+.topbar .navbar button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(219, 166, 166);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+    bottom: 14px;
+    right: 30;
+
+}
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus{
+    color:aliceblue;
+    background-color: rgb(222, 196, 196);
+}
+
+.spotify-playlists{
+    padding: 20px 40px;
+}
+.spotify-playlists h2{
+    color:#ac5764;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: #fffbfb;
+    /*text-shadow: 0 0 10px rgb(84, 91, 117);*/
+}
+.spotify-playlists .list .item{
+    min-width:140px;
+    width:160px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+
+
+}
+
+
+.spotify-playlists .list .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlists .list .item .play{
+    position: relative;
+
+}
+
+/*.spotify-playlist .list .item .play .fa{
+    position: absolute;
+    right:10px;
+    top:-60px;
+    padding: 18px;
+    background-color: #12141e;
+    border-radius: 100%;
+    opacity:0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover .play .fa{
+    opacity: 1;
+    transform: translateY(-20px);
+
+}
+*/
+.spotify-playlists .list .item h3{
+    color:#ac5764;
+    font-size: 15px;
+    text-shadow: #fffbfb;
+    opacity: ;
+}
+
+.spotify-playlists .list .item p{
+    color:#000b46;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+.preview {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #d594b2, #50abf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  .preview h6 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .preview p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .preview button {
+    background-color: #6878d4;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  .image-container {
+    margin-left: 210px;
+    margin-top: 20px;
+    display: flex;           /* Aligns the images side by side */
+    gap: 20px;               /* Adds some space between the images */
+    flex-wrap: wrap;
+
+}
+.image-container img {
+
+    border-radius: 8px;
+    width: 150px;            /* Set a fixed width for the images */
+    height: 150px;            /* Keep the aspect ratio */
+    object-fit: cover;
+
+}
+
+.image-wrapper {
+    position: relative; /* This makes absolute positioning work inside */
+    display: inline-block;
+}
+
+.image-wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: block;
+}
+.image-wrapper .fa-play {
+    position: absolute;
+    bottom: 43px;  /* Moves it up from the bottom */
+    right: 13px;   /* Moves it in from the right */
+    font-size: 20px;
+    color: #f79caa;
+    background: rgb(255, 255, 255);
+    width: 40px;   /* Set explicit width */
+    height: 40px;  /* Set equal height for a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;  /* Ensures circular shape */
+    z-index: 999;
+}
+
+.image-wrapper .fa-play {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper:hover .fa-play {
+    opacity: 1;
+}
+
+.image-container h3{
+    font-size: 14px;
+    color: #fabcd6;
+    
+
+}
+
+.image-container h6{
+    color: #ffffff;
+    opacity: 60%;
+    font:ariel;
+    
+
+}
+a {
+    text-decoration: none; /* Removes the underline */
+}
+
